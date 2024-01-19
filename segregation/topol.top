@@ -1,0 +1,13 @@
+#include "param.itp"
+#include "pol.itp"
+#include "polysome.itp"
+#include "monomers.itp"
+
+[ system ]
+Forked chromosome G=1.00 with polysome and ribosome
+
+[ molecules ]
+POL1    1
+R7S0   1292
+R3S0   2102
+R5S0   2102

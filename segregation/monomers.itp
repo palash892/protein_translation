@@ -1,0 +1,14 @@
+[ moleculetype ]
+R3S0   1
+[ atoms ]
+1       R30     1       R3S0   R30     1         0.0000
+[ position_restraints ]
+1       2       6       6.090   310.000 33.573  12.181  12.181  45.754
+
+[ moleculetype ]
+R5S0   1
+[ atoms ]
+1       R50     1       R5S0   R50     1         0.0000
+[ position_restraints ]
+1       2       6       6.090   310.000 33.573  12.181  12.181  45.754
+

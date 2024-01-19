@@ -1,0 +1,59 @@
+[ defaults ]
+1       1       no      1       1
+
+[ atomtypes ]
+;atomtype       mass    charge  particle        c6      c12
+;-------        ----    -----   -------         ---     ---
+B00             1.00    0.00    A               0.0     4.000e+00
+R30             0.26    0.00    A               0.0     2.622e-08
+R50             0.42    0.00    A               0.0     2.695e-07
+R70             0.71    0.00    A               0.0     1.894e-06
+
+
+[ nonbond_params ]
+;i      j       func    c6      c12
+;--     --      ----    --      ---
+;intra chromosome
+B00      B00      1       0.00    4.000e+00
+
+;ribosomal interactions
+R30      R30      1       0.00    2.622e-08
+R50      R50      1       0.00    2.695e-07
+R70      R70      1       0.00    1.894e-06
+R30      R50      1       0.00    8.406e-08
+R50      R70      1       0.00    7.145e-07
+R70      R30      1       0.00    2.229e-07
+;chromosome - ribosome interactions
+B00      R30      1       1.610e-02    3.239e-04
+B00      R50      1       2.882e-02    1.038e-03
+B00      R70      1       4.693e-02    2.753e-03
+ 
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;                     actual values                      ;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;sigma = {sig0} (length scales)
+;chromosome(1 bead = 5000bp)
+;size of 1 chromosome bead = {sig*sig0*1e9:.2f} nm
+;mass of 1 chromosome bead = {649*500/1e3:.2e} KDa [1]
+;epsilon for all chromosome beads = {ep0:.2f}
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;ribosome parameters
+;size of 30S subunit = 14 nm [2]
+;mass of 30S subunit = {0.85e3:.2e} KDa [3]
+;epsilon of 30S subunit = {ep_rib:.2e}
+;
+;size of 50S subunit = 17 nm [2]
+;mass of 50S subunit = {1.39e3:.2e} KDa [3]
+;epsilon of 50S subunit = {ep_rib:.2e}
+;
+;size of 70S subunit = 21 nm [2]
+;mass of 70S subunit = {2.31e3:.2e} KDa [3]
+;epsilon of 70S subunit = {ep_rib:.2e}
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;                         References                     ;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;[1] https://bionumbers.hms.harvard.edu/files/Nucleic%20Acids_Sizes_and_Molecular_Weights_2pgs.pdf
+;[2] https://onlinelibrary.wiley.com/doi/full/10.1111/mmi.12805
+;[3] https://www.nature.com/articles/nmeth.4147/
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;

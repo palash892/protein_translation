@@ -1,0 +1,40 @@
+[ moleculetype ]
+R3S0   0
+[ atoms ]
+1       R30     1       R3S0   R30     1         0.0000
+
+[ moleculetype ]
+R5S0   0
+[ atoms ]
+1       R50     1       R5S0   R50     1         0.0000
+
+[ moleculetype ]
+P1S0   0
+[ atoms ]
+1       P10     1       P1S0   P10     1         0.0000
+
+[ moleculetype ]
+P2S0   0
+[ atoms ]
+1       P20     1       P2S0   P20     1         0.0000
+
+[ moleculetype ]
+P3S0   0
+[ atoms ]
+1       P30     1       P3S0   P30     1         0.0000
+
+[ moleculetype ]
+P4S0   0
+[ atoms ]
+1       P40     1       P4S0   P40     1         0.0000
+
+[ moleculetype ]
+P5S0   0
+[ atoms ]
+1       P50     1       P5S0   P50     1         0.0000
+
+[ moleculetype ]
+T5S0    0
+[ atoms ]
+1       T50     1       T5S0    T50     1         0.0000
+
